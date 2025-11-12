@@ -447,21 +447,6 @@ files = [
 ]
 
 [[package]]
-name = "msal-streamlit-auth"
-version = "1.1.1"
-description = "Streamlit Authentication library based on MSAL.JS"
-category = "main"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "msal_streamlit_authentication-1.0.7-py3-none-any.whl", hash = "sha256:3d50cd0b587f5380cad5e38da9452d7d3cffed6aabb36e5d1b2a924d12f7db6e"},
-    {file = "msal_streamlit_authentication-1.0.7.tar.gz", hash = "sha256:79f8363ddac005675eb56f32700a03193f883a9b7d0c105c7c8e1723a65a3a9b"},
-]
-
-[package.dependencies]
-streamlit = "*"
-
-[[package]]
 name = "numpy"
 version = "1.24.2"
 description = "Fundamental package for array computing in Python"
