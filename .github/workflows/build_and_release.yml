@@ -26,11 +26,6 @@ jobs:
         run: npm install --prefix msal_streamlit_auth/frontend
       - name: Build React project
         run: npm run build --prefix msal_streamlit_auth/frontend
-        #
-        # TEST
-        #
-      - name: Test - list directoryis in frontend
-        run: ls msal_streamlit_auth/frontend
         #-------------------------------
         #   Setup python
         #-------------------------------
