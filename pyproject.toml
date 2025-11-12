@@ -1,7 +1,7 @@
 [project]
 name = "msal_streamlit_auth"
 version = "1.1.1"
-description = "Streamlit Authentication library based on MSAL.JS"
+description = "Streamlit auth library based on MSAL.JS"
 readme = "README.md"
 authors = [{name="Matthew Pallotta",email="matthew.pallotta@independenthealth.com"}]
 
@@ -12,16 +12,16 @@ repository = "https://github.com/mjpallotta/msal_streamlit_authentication"
 packages=[
     { include="msal_streamlit_auth" }
 ]
-include = ["msal_streamlit_authentication/frontend/dist/**/*"]
+include = ["msal_streamlit_auth/frontend/dist/**/*"]
 exclude = [
-    "msal_streamlit_authentication/frontend/index.html",
-    "msal_streamlit_authentication/frontend/public",
-    "msal_streamlit_authentication/frontend/src",
-    "msal_streamlit_authentication/frontend/tsconfig.json",
-    "msal_streamlit_authentication/frontend/tsconfig.node.json",
-    "msal_streamlit_authentication/frontend/package.json",
-    "msal_streamlit_authentication/frontend/package-lock.json",
-    "msal_streamlit_authentication/frontend/vite.config.ts",
+    "msal_streamlit_auth/frontend/index.html",
+    "msal_streamlit_auth/frontend/public",
+    "msal_streamlit_auth/frontend/src",
+    "msal_streamlit_auth/frontend/tsconfig.json",
+    "msal_streamlit_auth/frontend/tsconfig.node.json",
+    "msal_streamlit_auth/frontend/package.json",
+    "msal_streamlit_auth/frontend/package-lock.json",
+    "msal_streamlit_auth/frontend/vite.config.ts",
 ]
 
 [tool.poetry.dependencies]
