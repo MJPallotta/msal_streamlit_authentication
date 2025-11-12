@@ -10,3 +10,7 @@ dist/
 
 # IDE stuff
 .vscode
+
+
+
+.DS_Store
