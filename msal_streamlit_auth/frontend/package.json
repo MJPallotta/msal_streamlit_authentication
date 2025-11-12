@@ -1,6 +1,6 @@
 {
   "name": "msal-streamlit-component",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "msal-streamlit-component",
   "type": "module",
   "scripts": {
