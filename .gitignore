@@ -1,5 +1,7 @@
 # Python things
 __pycache__
+.venv
+main.py
 
 # JS misc
 node_modules

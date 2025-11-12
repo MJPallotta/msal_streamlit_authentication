@@ -8,10 +8,12 @@ _WEB_DEV_SERVER_URL = os.getenv("WEB_DEV_SERVER_URL", "http://localhost:5173")
 COMPONENT_NAME = "msal_authentication"
 
 if _USE_WEB_DEV_SERVER:
-    _component_func = components.declare_component(name=COMPONENT_NAME, url=_WEB_DEV_SERVER_URL)
+    _component_func = components.declare_component(
+        name=COMPONENT_NAME, url=_WEB_DEV_SERVER_URL)
 else:
     build_dir = str(Path(__file__).parent / "frontend" / "dist")
-    _component_func = components.declare_component(name=COMPONENT_NAME, path=build_dir)
+    _component_func = components.declare_component(
+        name=COMPONENT_NAME, path=build_dir)
 
 
 def msal_authentication(
