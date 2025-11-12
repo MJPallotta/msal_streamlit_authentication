@@ -49,7 +49,6 @@ const Authentication = ({ args }: ComponentProps) => {
       .then((response) => {
         // @ts-ignore
         setLoginToken(response);
-        console.log(response);
       })
       .catch(console.error);
   }, []);
