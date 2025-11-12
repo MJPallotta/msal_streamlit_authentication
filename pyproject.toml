@@ -5,7 +5,6 @@ description = "Streamlit Authentication library based on MSAL.JS"
 readme = "README.md"
 repository = "https://github.com/mjpallotta/msal_streamlit_authentication"
 authors = ["Matthew Pallotta"]
-package-mode = false
 packages=[
     { include="msal_streamlit_auth" }
 ]
