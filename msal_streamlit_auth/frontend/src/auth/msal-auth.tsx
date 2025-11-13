@@ -41,6 +41,6 @@ export const useMsalInstance = function (
       },
     },
   });
-  instance.initialize();
+  // instance.initialize();
   return instance;
 };

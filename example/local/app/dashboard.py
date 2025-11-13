@@ -1,6 +1,6 @@
 import streamlit as st
 
-from msal_streamlit_authentication import msal_authentication
+from msal_streamlit_auth import msal_authentication
 
 st.title("Streamlit MSAL Anthentication 🔒")
 

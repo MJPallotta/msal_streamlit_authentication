@@ -21,19 +21,21 @@ const Authentication = ({ args }: ComponentProps) => {
   }, []);
 
   useEffect(() => {
-    if (msalInstance.getAllAccounts().length > 0) {
-      msalInstance
-        .acquireTokenSilent({
-          ...loginRequest,
-          account: msalInstance.getAllAccounts()[0],
-        })
-        .then(function (response) {
-          // @ts-ignore
-          setLoginToken(response);
-        });
-    } else {
-      setLoginToken(null);
-    }
+    msalInstance.initialize().then(() => {
+      if (msalInstance.getAllAccounts().length > 0) {
+        msalInstance
+          .acquireTokenSilent({
+            ...loginRequest,
+            account: msalInstance.getAllAccounts()[0],
+          })
+          .then(function (response) {
+            // @ts-ignore
+            setLoginToken(response);
+          });
+      } else {
+        setLoginToken(null);
+      }
+    });
   }, []);
 
   useEffect(() => {
@@ -43,7 +45,6 @@ const Authentication = ({ args }: ComponentProps) => {
   }, [loginToken]);
 
   const loginPopup = useCallback(() => {
-    console.log('click');
     msalInstance
       .loginPopup(loginRequest)
       .then((response) => {
